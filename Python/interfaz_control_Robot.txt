@@ -1,0 +1,192 @@
+from tkinter import *
+import serial, time
+
+traccion = 0
+piston1 = 0
+piston2 = 0
+piston3 = 0
+servo = 0
+leds = 0
+dire = 0
+laser = 0
+piston4 = 0
+piston5 = 0
+piston6 = 0
+
+
+
+
+arduino = serial.Serial("COM6",9600)
+
+def encenderLed():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    leds = leds + 10
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def apagarLed():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    leds = leds-10
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_laser():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    laser = not(laser)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)    
+
+def i_o_piston1():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston1 = not(piston1)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_piston2():
+    global traccion, piston2, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston2 = not(piston2)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_piston3():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston3 = not(piston3)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_piston4():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston4 = not(piston4)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_piston5():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston5 = not(piston5)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def i_o_piston6():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    piston6 = not(piston6)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)    
+
+def moveSvo(self):
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    servo = btnServo.get()
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def sel_dire():
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    dire = not(dire)  
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def moveTraxion(self):
+    global traccion, piston1, servo, leds, piston2, piston3, dire, laser, piston4, piston5, piston6
+    traccion = btntraxion.get()
+    cadena = str(traccion) + "," + str(piston1) + "," + str(servo) + "," + str(leds) + "," + str(piston2) + "," + str(piston3)+ "," + str(dire)+ "," + str(laser) + "," + str(piston4)+ "," + str(piston5)+ "," + str(piston6)
+    arduino.write(bytearray(cadena,'ascii'))
+    #time.sleep(1)
+
+def actualizarGauges():
+    datos = arduino.readline().decode('utf-8').strip()
+    partes = datos.split(',')
+    if len(partes) == 3:  # AsegÃºrate de que hay exactamente 3 partes
+        temperatura = float(partes[0])
+        humedad = float(partes[1])
+        presion = float(partes[2])
+    lblpresion = Label(gaugesFrame, text = presion,bg = "white", fg = "black", font = ("Arial",15))
+    lblpresion.place(x = 220, y = 130) 
+    lbltemp = Label(gaugesFrame, text = temperatura,bg = "white", fg = "black", font = ("Arial",15))
+    lbltemp.place(x = 220, y = 50)
+    lblhum = Label(gaugesFrame, text = humedad,bg = "white", fg = "black", font = ("Arial",15))
+    lblhum.place(x = 220, y = 90)
+
+
+def cerrarInterfaz():
+    arduino.close()
+    raiz.destroy()
+
+raiz = Tk()
+raiz.geometry("1000x500")
+raiz.title("Arduino - Python")
+
+#Fondos
+titleFrame = Frame()
+titleFrame.config(bg = "white",width = "500", height = "80")
+titleFrame.place (x = 0, y = 0 )
+
+tittle2Frame = Frame()
+tittle2Frame.config(bg = "white",width= "500", height= "80")
+tittle2Frame.place (x = 500, y = 0 )
+
+buttonsFrame = Frame()
+buttonsFrame.config(bg = "orange",width = "500", height = "450")
+buttonsFrame.place (x = 0, y = 80 )
+
+gaugesFrame = Frame()
+gaugesFrame.config(bg = "green",width= "500", height= "270")
+gaugesFrame.place (x = 500, y = 80 )
+
+
+
+#titulo
+lblTitulo = Label(titleFrame, text = "CONTROL",bg = "white", fg = "black", font = ("Arial",15))
+lblTitulo.place(x = 180, y = 20)
+
+lblgauge = Label(tittle2Frame, text = "INDICADORES",bg = "white", fg = "black", font = ("Arial",15))
+lblgauge.place(x = 180, y = 20)
+
+
+
+
+#botones
+btnEncender = Button(buttonsFrame, text= "LEDS+", command= encenderLed)
+btnEncender.place (x = 70, y = 40)
+btnApagar = Button(buttonsFrame, text= "LEDS-", command= apagarLed)
+btnApagar.place(x = 350, y = 40)
+btnApagar = Button(buttonsFrame, text= "LASER", command= i_o_laser)
+btnApagar.place(x = 200, y = 40)
+btnCerrar = Button(buttonsFrame, text= "CERRAR", command= cerrarInterfaz) 
+btnCerrar.place(x = 420, y = 390)
+btnPiston1 = Button(buttonsFrame, text= "CARDA", command= i_o_piston1)
+btnPiston1.place (x = 70, y = 80)
+btnPiston2 = Button(buttonsFrame, text= "CLEANER", command= i_o_piston2)
+btnPiston2.place (x = 200, y = 80)
+btnPiston3 = Button(buttonsFrame, text= "F-WHEELS", command= i_o_piston3)
+btnPiston3.place (x = 330, y = 80)
+btnPiston4 = Button(buttonsFrame, text= "TRAX-WHEELS", command= i_o_piston4)
+btnPiston4.place (x = 70, y = 120)
+btnPiston4 = Button(buttonsFrame, text= "B-WHEELS", command= i_o_piston5)
+btnPiston4.place (x = 200, y = 120)
+btnPiston5 = Button(buttonsFrame, text= "GRACO", command= i_o_piston6)
+btnPiston5.place (x = 330, y = 120)
+btnServo = Scale(buttonsFrame, from_=0, to=180, orient=HORIZONTAL, command= moveSvo, label= "Servo", length= 300)
+btnServo.place(x = 70, y = 200)
+btnDire = Button(buttonsFrame, text= "LEFT/RIGHT", command= sel_dire)
+btnDire.place (x = 70, y = 270)
+btntraxion = Scale(buttonsFrame, from_=0, to=255, orient=HORIZONTAL, command= moveTraxion, label= "traccion", length= 300)
+btntraxion.place(x = 70, y = 300)
+btnActgauges = Button(gaugesFrame, text= "Actualizar Indicadores", command= actualizarGauges)
+btnActgauges.place(x= 70, y= 40)
+
+#btnServo.pack()
+
+
+
+
+raiz.mainloop()
