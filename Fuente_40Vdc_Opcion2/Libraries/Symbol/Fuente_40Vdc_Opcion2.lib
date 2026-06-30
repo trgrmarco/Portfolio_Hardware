@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# BD9G500UEFJ-LAE2
+#
+DEF BD9G500UEFJ-LAE2 IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "BD9G500UEFJ-LAE2" 1050 200 50 H V L CNN
+F2 "SOIC127P600X100-9N" 1050 100 50 H I L CNN
+F3 "https://www.mouser.jp/datasheet/2/348/bd9g500efj_la_e-1893421.pdf" 1050 0 50 H I L CNN
+F4 "Switching Voltage Regulators 7V to 76V Input, 5A Integrated High-Side MOSFET, Single Buck DC/DC Converter" 1050 -100 50 H I L CNN "Description"
+F5 "1" 1050 -200 50 H I L CNN "Height"
+F6 "755-BD9G500UEFJ-LAE2" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BD9G500UEFJ-LAE2?qs=By6Nw2ByBD1fsQHsNCgCqQ%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "ROHM Semiconductor" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "BD9G500UEFJ-LAE2" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -600 200 -600 200 100 N
+X SW 1 0 0 200 R 50 50 0 0 P
+X GND 2 0 -100 200 R 50 50 0 0 P
+X COMP 3 0 -200 200 R 50 50 0 0 P
+X FB 4 0 -300 200 R 50 50 0 0 P
+X RT 5 1200 -300 200 L 50 50 0 0 P
+X EN 6 1200 -200 200 L 50 50 0 0 P
+X BOOT 7 1200 -100 200 L 50 50 0 0 P
+X VIN 8 1200 0 200 L 50 50 0 0 P
+X EP 9 600 -800 200 U 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library

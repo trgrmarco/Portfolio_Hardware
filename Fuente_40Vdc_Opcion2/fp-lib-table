@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Fuente_40Vdc_Opcion2)(type KiCad)(uri ${KIPRJMOD}/Libraries/Footprint/Fuente_40Vdc_Opcion2.pretty)(options "")(descr ""))
+)
