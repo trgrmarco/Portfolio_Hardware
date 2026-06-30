@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Tarjeta_rs232_485_v1)(type KiCad)(uri ${KIPRJMOD}/LIBRARIES/footprint/Tarjeta_rs232_485_v1.pretty)(options "")(descr ""))
+)
