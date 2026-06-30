@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name IJX_Mux)(type Legacy)(uri ${KIPRJMOD}/Data/Libs/IJX_Mux.lib)(options "")(descr ""))
+  (lib (name Mux_SDI_BJT)(type Legacy)(uri ${KIPRJMOD}/libraries/symbols/Mux_SDI_BJT.lib)(options "")(descr ""))
+)
