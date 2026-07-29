@@ -1,0 +1,1 @@
+Tarjeta de control para robot IJX, la tarjeta tiene la aplicación de conmutar entre dos señales sdi-hd y una salida, para alternar entre la cámara delantera y trasera, también tiene control de alimentación sobre la cámara trasera y leds de alta potencia traseros para mejorar la visibilidad en un tubo; Controlado por un STM32.

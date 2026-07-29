@@ -1,0 +1,1 @@
+Amplificador de señal de video sdi-hd para cámara de los robots IJX,  probado a 130 mts de distancia y a 210 mts de distancia con dos amplificadores en serie; reemplaza un módulo comercial obsoleto el cual tiene que ser de tamaño compacto para que pueda ser instalado dentro del robot. 

@@ -1,0 +1,1 @@
+Tarjeta de control de parte superior para robot de limpieza y recubrimiento; la tarjeta controla motores de 24vdc, Leds de alta potencia, pistones neumáticos para adaptarse al diámetro del tubo, sensores de temperatura y presión, de posición (giroscopio), alimentación de una cámara , servomotor para movimiento de la cámara y laser.

@@ -1,0 +1,1 @@
+Fuente reductora de Voltaje (48Vdc a 40Vdc) para un motor de DC 3A el cual es controlado por un driver POLOLU el cual recomienda alimentar máximo con 42Vdc, la aplicación es para el control del carrete del robot el cual saca y mete cable según la distancia que vaya recorriendo el robot; ayudando a los operadores a volver a meter el cable sin esfuerzo físico.

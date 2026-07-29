@@ -1,0 +1,1 @@
+Tarjeta de control de parte inferior para robot de limpieza y recubrimiento; la tarjeta controla motores de tracción de 24vdc, pistones neumáticos para adaptarse al diámetro del tubo, sensores de temperatura y presión, de posición (giroscopio), sensor de humedad, amplificación de señal de una cámara.
