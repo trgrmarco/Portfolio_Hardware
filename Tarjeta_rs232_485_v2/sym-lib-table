@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name comp_tarjeta)(type Legacy)(uri ${KIPRJMOD}/LIBRARIES/symbols/comp_tarjeta.lib)(options "")(descr ""))
-  (lib (name TraccionLite)(type Legacy)(uri "C:/Users/Migue/Desktop/MARCO/Lite/Lite_CB/Traccion Maxon_CB/KiCAD/Libs/symbols/TraccionLite.lib")(options "")(descr ""))
-)
