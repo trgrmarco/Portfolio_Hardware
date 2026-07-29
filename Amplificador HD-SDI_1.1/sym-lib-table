@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name AmpHD-SDI)(type Legacy)(uri ${KIPRJMOD}/LIBRARIES/SYMBOL/AmpHD-SDI.lib)(options "")(descr ""))
-)

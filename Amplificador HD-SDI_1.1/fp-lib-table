@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name "Amplificador HD-SDI")(type KiCad)(uri "${KIPRJMOD}/LIBRARIES/FOOTPRINT/Amplificador HD-SDI.pretty")(options "")(descr ""))
-)
